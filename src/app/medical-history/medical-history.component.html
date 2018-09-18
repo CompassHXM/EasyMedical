@@ -1,0 +1,12 @@
+<div class="list-group">
+  <a *ngFor="let record of records" 
+      class="list-group-item list-group-item-action flex-column align-items-start"
+      href="/medical-record/{{record.id}}">
+      <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{record.title}}</h5>
+          <small>{{record.time}}</small>
+      </div>
+      <p class="mb-1">{{record.description}}</p>
+      <small>{{record.location}}</small>
+  </a>
+</div>
